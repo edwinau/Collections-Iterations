@@ -43,23 +43,43 @@ myCircle = {
 # puts "5. " + "{movies[:AI]}"
 #
 #Ex2.
+# puts "1"
+# puts fav_colours.last
+# puts " "
+#
+# puts "2"
+# puts population[:key] = "Milan"
+# puts " "
+#
+# puts "3"
+# puts coinFlip.reverse!
+# puts " "
+#
+# puts "4"
+# puts population [:london]
+# puts " "
+#
+# puts "5"
+# performingArtists.each do |x|
+#   puts "I think #{x} is great."
+# end
+#
+# Ex3.
 puts "1"
-puts fav_colours.last
+puts performingArtists[1,2]
 puts " "
 
 puts "2"
-puts population[:key] = "Milan"
+movies.each do |x,y|
+  puts "#{x} came out in #{y}."
+end
 puts " "
 
-puts "3"
-puts coinFlip.reverse!
+puts "3a"
+puts ourAges.sort.reverse {|a| a(0) <=> a(0)}
 puts " "
 
 puts "4"
-puts population [:london]
+movies [:Beauty_and_the_Beast] = 1997 , 2017
+puts movies
 puts " "
-
-puts "5"
-performingArtists.each do |x|
-  puts "I think #{x} is great."
-end
