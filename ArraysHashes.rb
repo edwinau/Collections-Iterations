@@ -1,9 +1,9 @@
 #Ex0.1
 fav_colours = ["blue", "red", "black", "green", "yellow"]
 
-ourAges = [["Dave",26], ["Yonge",31],["John",23],["Greg",48]]
+ourAges = [["Yonge",26], ["Dave",31],["Patrik",23],["Greg",48]]
 
-coinFlip = ["heads","tails","heads","heads","tails"]
+coinFlip = ["heads","heads","heads","heads","tails"]
 
 performingArtists = ["Ed Sheeran", "Sam Smith", "Adele"]
 
@@ -65,21 +65,43 @@ myCircle = {
 # end
 #
 # Ex3.
-puts "1"
-puts performingArtists[1,2]
+# puts "1"
+# puts performingArtists[1,2]
+# puts " "
+#
+# puts "2"
+# movies.each do |x,y|
+#   puts "#{x} came out in #{y}."
+# end
+# puts " "
+#
+# puts "3a"
+# puts ourAges.sort.reverse {|a| a(0) <=> a(0)}
+# puts " "
+#
+# puts "4"
+# movies [:Beauty_and_the_Beast] = 1997 , 2017
+# puts movies
+# puts " "
+
+#Ex4.
+puts "1."
+puts ourAges.select { |k,v| v < 31 }
 puts " "
 
-puts "2"
-movies.each do |x,y|
-  puts "#{x} came out in #{y}."
-end
+puts "2."
+puts ourAges.max
 puts " "
 
-puts "3a"
-puts ourAges.sort.reverse {|a| a(0) <=> a(0)}
+puts "3."
+puts coinFlip.count "heads"
 puts " "
 
-puts "4"
-movies [:Beauty_and_the_Beast] = 1997 , 2017
-puts movies
+puts "4."
+performingArtists.delete("Adele")
+puts performingArtists
 puts " "
+
+puts "5."
+population[:Paris] = "3.2 Million"
+puts population
