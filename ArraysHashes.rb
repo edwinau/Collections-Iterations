@@ -23,9 +23,9 @@ movies = {
 }
 
 population = {
-  :london => "8.6 Million",
-  :Paris => "2.2 Million",
-  :toronto => "2.6 Million"
+  :london => 8.6,
+  :Paris => 2.2,
+  :toronto => 2.6
 }
 
 myCircle = {
@@ -85,23 +85,55 @@ myCircle = {
 # puts " "
 
 #Ex4.
+# puts "1."
+# puts ourAges.select { |k,v| v < 31 }
+# puts " "
+#
+# puts "2."
+# puts ourAges.max
+# puts " "
+#
+# puts "3."
+# puts coinFlip.count "heads"
+# puts " "
+#
+# puts "4."
+# performingArtists.delete("Adele")
+# puts performingArtists
+# puts " "
+#
+# puts "5."
+# population[:Paris] = "3.2 Million"
+# puts population
+# Ex5.
 puts "1."
-puts ourAges.select { |k,v| v < 31 }
+sum = 0
+population.each do |k,v|
+  sum += v
+end
+puts "total population is #{sum}"
 puts " "
 
 puts "2."
-puts ourAges.max
+myCircle.each do |k,v|
+  if v >= 30
+    puts "#{k} is old."
+  elsif v < 30
+    puts "#{k} is young."
+  end
+end
 puts " "
 
 puts "3."
-puts coinFlip.count "heads"
+puts fav_colours.last(2)
 puts " "
 
 puts "4."
-performingArtists.delete("Adele")
-puts performingArtists
-puts " "
+myCircle.each do |k,v|
+  puts "#{k} is #{v += 1} years old."
+  puts "#{k} is #{v} years old."
+end
 
 puts "5."
-population[:Paris] = "3.2 Million"
-puts population
+fav_colours << "fuschia" << "cobalt"
+puts fav_colours
