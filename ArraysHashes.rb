@@ -150,14 +150,31 @@ newMovies.each do |k,v|
     puts v
 end
 
-# # puts "2."
-# # # puts phoneRows = [[1,2,3],[4,5,6],[7,8,9,] [*,0,c]]
-# #
-# # puts "3"
-#
-# # Ex7
-# var = fav_colours2
-#
-# var = var << performingArtists
-# var.class
-# puts var.sort {|x,y| x <=> y }
+
+array_new = [[123],[456],[789],['*0#']]
+puts array_new
+
+array_new = [{:Hong_Kong => "Asia", :island=> "yes"}, {:Milan => "Europe", :island=> "no"}, {:Toronto => "North_America", :island=> "no"}]
+
+array = [20.times do puts "I will not skateboard in the halls" end]
+
+
+y = Array.new(20,"I will not skateboard in the halls")
+
+(1..50).each {|x| puts x.to_s*3}
+
+
+Array(1..50).each do |a|
+  sum = 0
+  puts sum += a
+end
+
+(1..50).each do |num|
+   puts array.push(num)
+end
+
+sum=0
+  array.each do |num|
+     sum += num
+  end
+puts sum
